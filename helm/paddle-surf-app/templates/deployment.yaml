@@ -1,0 +1,8 @@
+{{- include "ffc-helm-library.deployment" (list . "paddle-surf-app.deployment") -}}
+{{- define "paddle-surf-app.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "ffc-helm-library.container" (list . "paddle-surf-app.container") }}
+{{- end -}}

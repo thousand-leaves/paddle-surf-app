@@ -1,10 +1,10 @@
 services:
-  ffc-template-node:
+  paddle-surf-app:
     build:
       context: .
       target: production
-    image: ffc-template-node
-    container_name: ffc-template-node
+    image: paddle-surf-app
+    container_name: paddle-surf-app
     environment:
-      APPINSIGHTS_CLOUDROLE: ffc-template-node-local
+      APPINSIGHTS_CLOUDROLE: paddle-surf-app-local
       APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}

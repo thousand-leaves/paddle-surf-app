@@ -1,0 +1,3 @@
+{{- include "ffc-helm-library.cluster-ip-service" (list . "paddle-surf-app.cluster-ip-service") -}}
+{{- define "paddle-surf-app.cluster-ip-service" -}}
+{{- end -}}

@@ -1,3 +1,3 @@
 services:
-  ffc-template-node:
+  paddle-surf-app:
     command: npm run start:debug

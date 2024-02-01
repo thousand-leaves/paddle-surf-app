@@ -1,9 +1,9 @@
 environment: production
 environmentCode:
-name: ffc-template-node
-namespace: ffc-demo
-workstream: ffc-demo
-image: ffc-template-node
+name: paddle-surf-app
+namespace: paddle-surf
+workstream: paddle-surf
+image: paddle-surf-app
 
 labels:
   component: service
@@ -12,10 +12,10 @@ appInsights:
   connectionString:
 
 containerConfigMap:
-  name: ffc-template-node-config-map
+  name: paddle-surf-app-config-map
 
 containerSecret:
-  name: ffc-template-node-container-secret
+  name: paddle-surf-app-container-secret
   type: Opaque
 
 deployment: {}

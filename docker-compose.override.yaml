@@ -2,11 +2,11 @@
 # to provide dependencies and expose ports for local testing
 
 services:
-  ffc-template-node:
+  paddle-surf-app:
     build:
       target: development
-    image: ffc-template-node-development
-    container_name: ffc-template-node-development
+    image: paddle-surf-app-development
+    container_name: paddle-surf-app-development
     ports:
       - "3000:3000"
       - "9229:9229"
