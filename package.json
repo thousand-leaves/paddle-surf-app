@@ -17,7 +17,7 @@
   "contributors": [],
   "license": "OGL-UK-3.0",
   "dependencies": {
-    "@hapi/hapi": "^21.3.2",
+    "@hapi/hapi": "^21.3.3",
     "@hapi/inert": "^7.1.0",
     "@hapi/vision": "^7.0.3",
     "@hapi/wreck": "^18.0.1",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "jest-junit": "16.0.0",
+    "nock": "^13.5.1",
     "nodemon": "3.0.1",
     "standard": "17.1.0",
     "supertest": "^6.3.4"

@@ -15,4 +15,20 @@ const routes = [].concat(
 
 server.route(routes)
 
+// Manually set CORS headers in the onPreResponse extension
+server.ext('onPreResponse', (request, h) => {
+  const response = request.response
+  if (response.isBoom) {
+    // Handle Boom errors (e.g., validation errors)
+    return h.continue
+  }
+
+  // Enable CORS for all routes
+  response.header('Access-Control-Allow-Origin', '*')
+  response.header('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+  response.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+
+  return h.continue
+})
+
 module.exports = server
